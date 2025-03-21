@@ -517,6 +517,16 @@ a.theme-btn.style-three:hover {
   background: var(--primary-color);
   border-color: var(--primary-color);
 }
+@media only screen and (max-width: 767px) {
+  .hero-area {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-area .theme-btn {
+    display: flex;
+  }
+}
 
 /* Read More */
 .read-more {
@@ -4439,7 +4449,7 @@ h6,
 }
 .main-menu .navbar-header .navbar-toggle {
   float: right;
-  padding: 4px 0;
+  padding: 4px 20px;
   cursor: pointer;
   background: transparent;
 }
@@ -4963,6 +4973,7 @@ h6,
 @media only screen and (max-width: 479px) {
   .hero-content .sub-title {
     font-size: 20px;
+    text-align: center;
   }
 }
 .hero-content .sub-title i {
@@ -4979,12 +4990,14 @@ h6,
 }
 @media only screen and (max-width: 1199px) {
   .hero-content h1 {
-    font-size: 80px;
+    font-size: 80px;    
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-content h1 {
     font-size: 70px;
+    text-align: center;
+
   }
 }
 @media only screen and (max-width: 479px) {
@@ -4999,6 +5012,12 @@ h6,
 }
 .hero-content p {
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .hero-content p {
+   text-align: center;
+   padding: 0 15px;
+  }
 }
 @media only screen and (min-width: 376px) {
   .hero-content p {
@@ -5041,6 +5060,13 @@ h6,
     margin-right: -18%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .hero-images  {
+    padding: 0 15px;
+    margin-top: -0px;
+    margin-bottom: -30px;
+  }
+}
 .hero-images .price {
   max-width: 31%;
   position: absolute;
@@ -5052,6 +5078,7 @@ h6,
     right: -5%;
   }
 }
+
 
 .hero-shapes .shape {
   position: absolute;
@@ -5215,6 +5242,7 @@ h6,
     font-size: 80px;
   }
 }
+
 
 /* Hero Three */
 .hero-area-three {
@@ -5659,13 +5687,26 @@ h6,
 }
 
 @media only screen and (max-width: 1299px) {
+  .offer-content {
+    padding: 0 10px ;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
   .offer-content h2 {
     font-size: 70px;
   }
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
+
   .offer-content h2 {
     font-size: 60px;
+    margin-top: 30px;
+    text-align: center;  
+  }
+  .offer-content .theme-btn {
+    
+    display: flex;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -6296,6 +6337,29 @@ h6,
     font-size: 50px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .about-us-content  {
+text-align: center;
+padding: 0 10px; 
+}
+.about-us-content h2 {
+  font-size: 32px;
+}}
+@media only screen and (max-width: 767px) {
+.about-btn-author{
+  
+  justify-content: center;
+  display: flex;
+
+}
+}
+@media only screen and (max-width: 767px) {
+  .about-btn-author  .theme-btn {
+   
+    margin-right: 0!important;
+  }
+  }
+
 
 .why-choose-area .marquee-wrap.style-two {
   position: absolute;
@@ -6317,6 +6381,20 @@ h6,
 .why-choose-content {
   max-width: 530px;
 }
+
+@media only screen and (max-width: 767px) {
+  .why-choose-content{   
+    text-align: center;
+  }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .why-choose-area .theme-btn{   
+      display: flex;
+      margin-top: 30px;
+      
+    }
+  }
 .why-choose-content p {
   span {
     color: black;
@@ -8547,8 +8625,8 @@ h6,
 /*************** ## Testimonials Area *****************/
 /*******************************************************/
 .testimonials-active {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: 15px;
 }
 .testimonials-active .testimonial-item {
   margin-left: 15px;
@@ -8563,6 +8641,7 @@ h6,
   margin-bottom: 30px;
   padding: 40px 40px 35px 45px;
 }
+
 @media only screen and (max-width: 375px) {
   .testimonial-item {
     padding-left: 25px;
@@ -8871,6 +8950,7 @@ h6,
   margin-top: 30px;
   font-size: 24px;
 }
+
 @media only screen and (max-width: 575px) {
   .testimonial-five-item {
     font-size: 20px;
@@ -10889,4 +10969,9 @@ blockquote .blockquote-footer:before {
   top: -65px;
   color: var(--heading-color);
   background-image: url(../images/shapes/scroll-top-yellow-bg.png);
+}
+@media only screen and (max-width: 767px) {
+  .main-footer {
+    text-align: center;
+  }
 }

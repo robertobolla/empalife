@@ -73,17 +73,11 @@ const Sidebar = () => {
           {/*Social Icons*/}
           <div className="social-style-one">
             <Link href="contact">
-              <i className="fab fa-twitter" />
-            </Link>
-            <Link href="contact">
               <i className="fab fa-facebook-f" />
             </Link>
             <Link href="contact">
               <i className="fab fa-instagram" />
             </Link>
-            <a href="#">
-              <i className="fab fa-pinterest-p" />
-            </a>
           </div>
         </div>
       </section>
@@ -149,77 +143,11 @@ const MobileMenu = () => {
                     }`}
                   >
                     <ul className="navigation clearfix">
-                      <li className="dropdown">
-                        <a href="#">pages</a>
-                        <ul style={activeLi("pages")}>
-                          <li>
-                            <Link href="about">About Us</Link>
-                          </li>
-                          <li>
-                            <Link href="history">Our History</Link>
-                          </li>
-                          <li>
-                            <Link href="faq">faqs</Link>
-                          </li>
-                          <li>
-                            <Link href="chefs">Our chefs</Link>
-                          </li>
-                          <li>
-                            <Link href="chef-details">chef Details</Link>
-                          </li>
-                          <li>
-                            <Link href="gallery">Gallery</Link>
-                          </li>
-                        </ul>
-                        <div
-                          className="dropdown-btn"
-                          onClick={() => activeMenuSet("pages")}
-                        >
-                          <span className="far fa-angle-down" />
-                        </div>
+                      <li>
+                        <Link href="marketing">Marketing</Link>
                       </li>
-                      <li className="dropdown">
-                        <a href="#">blog</a>
-                        <ul style={activeLi("blog")}>
-                          <li>
-                            <Link href="blog">blog standard</Link>
-                          </li>
-                          <li>
-                            <Link href="blog-details">blog details</Link>
-                          </li>
-                        </ul>
-                        <div
-                          className="dropdown-btn"
-                          onClick={() => activeMenuSet("blog")}
-                        >
-                          <span className="far fa-angle-down" />
-                        </div>
-                      </li>
-                      <li className="dropdown">
-                        <a href="#">shop</a>
-                        <ul style={activeLi("shop")}>
-                          <li>
-                            <Link href="shop">Products</Link>
-                          </li>
-                          <li>
-                            <Link href="product-details">Product Details</Link>
-                          </li>
-                          <li>
-                            <Link href="product-details">Product Details</Link>
-                          </li>
-                          <li>
-                            <Link href="cart">Shopping Cart</Link>
-                          </li>
-                          <li>
-                            <Link href="checkout">Checkout Page</Link>
-                          </li>
-                        </ul>
-                        <div
-                          className="dropdown-btn"
-                          onClick={() => activeMenuSet("shop")}
-                        >
-                          <span className="far fa-angle-down" />
-                        </div>
+                      <li>
+                        <Link href="certifications">Certifications</Link>
                       </li>
                       <li>
                         <Link href="contact">Contact</Link>

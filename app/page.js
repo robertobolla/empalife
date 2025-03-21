@@ -566,12 +566,11 @@ const page = () => {
                     to the next level in your city!
                   </span>
                 </p>
-                <div className="about-btn-author mb-60">
-                  <Link href="about" className="theme-btn">
-                    Contact Us & Get Started Now!{" "}
-                    <i className="far fa-arrow-alt-right" />
-                  </Link>
-                </div>
+
+                <Link href="about" className="theme-btn">
+                  Contact Us & Get Started Now!{" "}
+                  <i className="far fa-arrow-alt-right" />
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
