@@ -159,12 +159,12 @@ const DefaultFooter = () => {
                     </div>
                     <ul>
                       <li>
-                        <a href="mailto:wellfood@gmail.com">
+                        <a href="mailto:info@empalifeusa.com">
                           <u>info@empalifeusa.com</u>
                         </a>
                       </li>
                       <li>
-                        <a href="callto:+(1)0987654321">+1 (786) 270-8003</a>
+                        <a href="callto:+(1)9297828394">+1 (929) 782-8394</a>
                       </li>
                     </ul>
                   </div>

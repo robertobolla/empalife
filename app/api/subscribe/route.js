@@ -14,8 +14,8 @@ export async function POST(req) {
 
     // Envía el correo de bienvenida
     const response = await resend.emails.send({
-      from: "no-reply@yourdomain.com", // Debe ser un dominio verificado en Resend
-      to: [email], // Email del usuario que se suscribió
+      from: "no-reply@empalifeusa.com", // Debe ser un dominio verificado en Resend
+      to: ["info@empalifeusa.com"], // Email del usuario que se suscribió
       subject: "Welcome to our Newsletter!",
       html: `
         <h2>Welcome to Empalife Newsletter!</h2>

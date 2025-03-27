@@ -40,7 +40,7 @@ const page = () => {
                     <div className="content">
                       <span className="title">Phone Nº</span>
                       <h6>
-                        <a href="callto:+178627080083">+1 (786) 270-800083</a>
+                        <a href="callto:+178627080083">+1 (929) 782-8394</a>
                       </h6>
                     </div>
                   </div>

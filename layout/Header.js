@@ -5,6 +5,53 @@ import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 
 const Sidebar = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone_number: "-", // opcional si no se solicita
+          subject: "Consulta desde formulario lateral",
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        setFormData({ name: "", email: "", message: "" });
+        document.querySelector("body").classList.remove("side-content-visible");
+      } else {
+        throw new Error("Error al enviar el mensaje");
+      }
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Fragment>
       {/*Form Back Drop*/}
@@ -34,40 +81,50 @@ const Sidebar = () => {
           </div>
           {/*Appointment Form*/}
           <div className="appointment-form">
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                document
-                  .querySelector("body")
-                  .classList.remove("side-content-visible");
-              }}
-            >
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
                   type="text"
-                  name="text"
-                  defaultValue=""
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Name"
-                  required=""
+                  required
                 />
               </div>
               <div className="form-group">
                 <input
                   type="email"
                   name="email"
-                  defaultValue=""
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email Address"
-                  required=""
+                  required
                 />
               </div>
               <div className="form-group">
-                <textarea placeholder="Message" rows={5} defaultValue={""} />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  rows={5}
+                  required
+                />
               </div>
               <div className="form-group">
-                <button type="submit" className="theme-btn style-two">
-                  Submit now
+                <button
+                  type="submit"
+                  className="theme-btn style-two"
+                  disabled={loading}
+                >
+                  {loading ? "Sending..." : "Submit now"}
                 </button>
               </div>
+              {success && (
+                <p style={{ color: "green" }}>Message sent successfully!</p>
+              )}
+              {error && <p style={{ color: "red" }}>{error}</p>}
             </form>
           </div>
           {/*Social Icons*/}
@@ -159,7 +216,7 @@ const MobileMenu = () => {
               </div>
               <div className="header-number">
                 <i className="far fa-phone" />
-                Call : <a href="callto:+17862708003">+1 (786) 270-8003</a>
+                Call : <a href="callto:+17862708003">+1 (929) 782-8394</a>
               </div>
 
               {/* Menu Button */}
