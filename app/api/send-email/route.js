@@ -7,7 +7,7 @@ export async function POST(req) {
     const { name, email, phone_number, subject, message } = await req.json();
 
     const response = await resend.emails.send({
-      from: "no-reply@empalifeusa.com", // Usa un dominio verificado en Resend
+      from: "nonboarding@resend.dev", // Usa un dominio verificado en Resend
       to: ["info@empalifeusa.com"], // Cambia por tu email real
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
