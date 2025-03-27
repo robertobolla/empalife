@@ -1,6 +1,6 @@
 import { AboutUs3 } from "@/components/AboutUs";
 import BookTableForm from "@/components/BookTableForm";
-import FoodCategory from "@/components/FoodCategory";
+import FoodCategory from "@/components/Certifications";
 import Headline from "@/components/Headline";
 import PageBanner from "@/components/PageBanner";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";

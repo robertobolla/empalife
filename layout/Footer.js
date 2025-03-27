@@ -195,27 +195,28 @@ const DefaultFooter = () => {
       <div className="footer-bottom pt-30 pb-15">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5">
+            <div className="col-lg-6">
               <div className="copyright-text text-center text-lg-start">
                 <p>
                   Copyright 2025 <Link href="/">Empalife</Link>. All Rights
                   Reserved{" "}
                 </p>
               </div>
-            </div>
-            <div className="col-lg-7 text-center text-lg-end">
-              <ul className="footer-bottom-nav">
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-              </ul>
+            </div>{" "}
+            <div className="col-lg-6">
+              <div className="copyright-text text-end text-lg-end">
+                <p>
+                  Designed by{" "}
+                  <Link href="https://escalewebs.com/">ESCALEWEBS</Link>.
+                </p>
+              </div>
             </div>
           </div>
           {/* Scroll Top Button */}
-          <button className="scroll-top scroll-to-target" data-target="html">
+          <button
+            className="scroll-top"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <i className="fas fa-arrow-alt-up" />
           </button>
         </div>

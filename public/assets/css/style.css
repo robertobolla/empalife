@@ -955,7 +955,7 @@ a.theme-btn.style-three:hover {
   line-height: 80px;
   border-radius: 50%;
   background-color: transparent;
-  background-image: url(../images/shapes/scroll-top-bg.png);
+  background-image: url(../images/shapes/about-star-yellow.png);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-animation: pulse 2s infinite;
@@ -10933,6 +10933,7 @@ blockquote .blockquote-footer:before {
     left: calc(50% - 30px);
   }
 }
+
 
 .footer-bottom-nav {
   -ms-flex-wrap: wrap;

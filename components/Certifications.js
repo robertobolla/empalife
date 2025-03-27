@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const FoodCategory = () => {
+const Certifications = () => {
   return (
     <section className="food-category-area pb-90 rpb-65 rel z-1">
       <div className="container">
@@ -160,4 +160,4 @@ const FoodCategory = () => {
     </section>
   );
 };
-export default FoodCategory;
+export default Certifications;

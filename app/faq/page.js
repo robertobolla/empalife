@@ -1,5 +1,5 @@
 "use client";
-import FoodCategory from "@/components/FoodCategory";
+import FoodCategory from "@/components/Certifications";
 import Headline from "@/components/Headline";
 import PageBanner from "@/components/PageBanner";
 import WellFoodLayout from "@/layout/WellFoodLayout";

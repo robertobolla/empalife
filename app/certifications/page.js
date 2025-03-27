@@ -4,7 +4,7 @@ import OfferCard from "@/components/OfferCard";
 import PageBanner from "@/components/PageBanner";
 import RestaurantMenu from "@/components/RestaurantMenu";
 import WellFoodLayout from "@/layout/WellFoodLayout";
-import FoodCategory from "@/components/FoodCategory";
+import Certifications from "@/components/Certifications";
 
 const page = () => {
   return (
@@ -15,7 +15,7 @@ const page = () => {
       <Headline />
       {/* Headline Area end */}
       {/* Food Category Area start */}
-      <FoodCategory />
+      <Certifications />
       {/* Food Category Area end */}
     </WellFoodLayout>
   );
