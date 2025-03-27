@@ -17,7 +17,7 @@ export async function POST(req) {
     });
 
     const response = await resend.emails.send({
-      from: "onboarding@resend.dev", // Usa este para pruebas sin dominio verificado
+      from: "no-reply@empalifeusa.com", // Usa este para pruebas sin dominio verificado
       to: ["info@empalifeusa.com"], // Cambia por tu email real
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
