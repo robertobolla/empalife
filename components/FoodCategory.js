@@ -12,7 +12,6 @@ const FoodCategory = () => {
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <span className="sub-title mb-5">popular food category</span>
               <h2>Certifications</h2>
             </div>
           </div>
@@ -47,9 +46,13 @@ const FoodCategory = () => {
                   </li>
                 </ul>
                 <div className="button-center">
-                  <Link href="contact" className="theme-btn">
+                  <a
+                    href="/assets/permissions/SQF.pdf"
+                    download
+                    className="theme-btn"
+                  >
                     Descargá SQF <i className="far fa-arrow-alt-right" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -87,9 +90,13 @@ const FoodCategory = () => {
                   </li>
                 </ul>
                 <div className="button-center">
-                  <Link href="contact" className="theme-btn">
+                  <a
+                    href="/assets/permissions/FDA.pdf"
+                    download
+                    className="theme-btn"
+                  >
                     Descargá FDA <i className="far fa-arrow-alt-right" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -127,9 +134,13 @@ const FoodCategory = () => {
                   </li>
                 </ul>
                 <div className="button-center">
-                  <Link href="contact" className="theme-btn">
+                  <a
+                    href="/assets/permissions/FSP.pdf"
+                    download
+                    className="theme-btn"
+                  >
                     Descargá FSP <i className="far fa-arrow-alt-right" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

@@ -108,10 +108,10 @@ const DefaultFooter = () => {
                   service that drives your growth.
                 </p>
                 <div className="social-style-one mt-15">
-                  <Link href="contact">
+                  <Link href="https://www.facebook.com/profile.php?id=61574131498680&locale=es_LA">
                     <i className="fab fa-facebook-f" />
                   </Link>
-                  <Link href="contact">
+                  <Link href="https://www.instagram.com/empalifeusa/">
                     <i className="fab fa-instagram" />
                   </Link>
                 </div>
