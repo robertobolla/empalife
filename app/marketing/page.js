@@ -31,7 +31,7 @@ const page = () => {
             >
               <div className="chef-content-part mb-55">
                 <div className="section-title mb-30 rmb-5">
-                  <h2>Comprehensive Marketing Service</h2>
+                  <h2 className="title-h2">Comprehensive Marketing Service</h2>
                   <span className="designations">
                     Boost Your Business with Empalife
                   </span>
@@ -148,7 +148,7 @@ const page = () => {
             </div>
             <div className="col-xl-4 col-lg-6">
               <div
-                className="feature-two-content"
+                className="feature-two-content "
                 data-aos="fade-right"
                 data-aos-duration={1500}
                 data-aos-offset={50}
@@ -205,7 +205,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="feature-two-area pb-130 rpb-100">
+      <div className="feature-two-area  pb-130 rpb-100">
         <div className="container-fluid">
           <div className="row no-gap">
             <div className="col-xl-4 col-lg-6 offset-xl-4">

@@ -6355,8 +6355,8 @@ padding: 0 10px;
 }
 @media only screen and (max-width: 767px) {
   .about-btn-author  .theme-btn {
-   
-    margin-right: 0!important;
+width: 100%; 
+   margin-right: 0!important;
   }
   }
 
@@ -6399,6 +6399,14 @@ padding: 0 10px;
   span {
     color: black;
     font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-us-content .theme-btn {   
+    display: flex;
+ 
+    
   }
 }
 
@@ -8305,6 +8313,21 @@ padding: 0 10px;
 .feature-two-content .theme-btn {
   font-size: 16px;
   padding: 7px 30px;
+}
+@media only screen and (max-width: 767px) {
+  .feature-two-area {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skills-area {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .skills-area .theme-btn {
+    display: flex;
+  }
 }
 
 /*******************************************************/
@@ -10974,4 +10997,21 @@ blockquote .blockquote-footer:before {
   .main-footer {
     text-align: center;
   }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .chef-details-area {
+    text-align: center;
+  }
+  .chef-details-area .section-title {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .chef-details-area .title-h2 {
+    padding-bottom: 30px;
+  }
+
 }

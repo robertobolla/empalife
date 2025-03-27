@@ -27,7 +27,7 @@ const page = () => {
                     <div className="content">
                       <span className="title">Email Address</span>
                       <h6>
-                        <a href="mailto:supportinfo@gmail.com">
+                        <a href="mailto:info@empalifeusa.com">
                           info@empalifeusa.com
                         </a>
                       </h6>
