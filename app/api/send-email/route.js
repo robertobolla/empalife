@@ -4,10 +4,20 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {
+    console.log("✅ Se recibió una solicitud en /api/send-email");
+
     const { name, email, phone_number, subject, message } = await req.json();
 
+    console.log("📝 Datos recibidos:", {
+      name,
+      email,
+      phone_number,
+      subject,
+      message,
+    });
+
     const response = await resend.emails.send({
-      from: "nonboarding@resend.dev", // Usa un dominio verificado en Resend
+      from: "onboarding@resend.dev", // Usa este para pruebas sin dominio verificado
       to: ["info@empalifeusa.com"], // Cambia por tu email real
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
@@ -19,11 +29,13 @@ export async function POST(req) {
       `,
     });
 
+    console.log("📤 Respuesta de Resend:", response);
+
     return new Response(JSON.stringify({ success: true, response }), {
       status: 200,
     });
   } catch (error) {
-    console.error("Error al enviar el email:", error);
+    console.error("❌ Error al enviar el email:", error);
     return new Response(
       JSON.stringify({ error: "Error enviando el mensaje" }),
       { status: 500 }
