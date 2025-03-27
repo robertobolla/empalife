@@ -216,7 +216,7 @@ const MobileMenu = () => {
               </div>
               <div className="header-number">
                 <i className="far fa-phone" />
-                Call : <a href="callto:+17862708003">+1 (929) 782-8394</a>
+                Call : <a href="callto:+19297828394">+1 (929) 782-8394</a>
               </div>
 
               {/* Menu Button */}
@@ -320,7 +320,7 @@ const Header = () => {
               </div>
               <div className="header-number">
                 <i className="far fa-phone" />
-                Call : <a href="callto:+17862708003">+1 (786) 270-8003</a>
+                Call : <a href="callto:+19297828394">+1 (929) 782-8394</a>
               </div>
 
               {/* Menu Button */}
